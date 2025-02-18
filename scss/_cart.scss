@@ -1,0 +1,45 @@
+@use 'mixins' as mix;
+
+.cart-container {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    @include mix.border-radius(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    @include mix.transition(opacity, 0.5s);
+    opacity: 0.2;
+  
+    &:hover {
+      opacity: 1;
+    }
+  
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+    }
+  
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .nombre-producto {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .precio-producto {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .detalle-producto {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  

@@ -1,0 +1,154 @@
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  #main-video-fondo {
+    height: auto;
+    width: 100%;
+  }
+
+  .articles-section {
+    padding: 5px;
+  }
+
+  article {
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 10px 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+
+  .titulo {
+    font-size: 50px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  #main-video-fondo {
+    height: auto;
+    width: 100%;
+  }
+
+  .articles-section {
+    padding: 10px;
+  }
+
+  article {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}
+
+/* Desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 10px 15px;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+
+  .titulo {
+    font-size: 75px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  #main-video-fondo {
+    height: auto;
+    width: 100%;
+  }
+
+  .articles-section {
+    padding: 15px;
+  }
+
+  article {
+    margin: 15px 0;
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+}

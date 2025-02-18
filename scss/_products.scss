@@ -1,0 +1,19 @@
+.producto {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .descripcion {
+      padding: 10px;
+      flex-grow: 1;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.articles-section {
+    display: flex;
+  
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+  
+    article {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  }
+  

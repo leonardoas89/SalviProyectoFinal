@@ -1,0 +1,20 @@
+// Importar variables y mixins primero
+@use 'scss/variables' as var; 
+@use 'scss/mixins' as mix;
+
+// Importar estilos globales
+@use 'scss/global';
+
+// Importar estilos de componentess
+@use 'scss/header';
+@use 'scss/navigation';
+@use 'scss/video-section';
+@use 'scss/tipografia';
+@use 'scss/articles';
+@use 'scss/footer';
+@use 'scss/forms';
+@use 'scss/products';
+@use 'scss/cart';
+
+// Importar media queries
+@use 'scss/media-queries';

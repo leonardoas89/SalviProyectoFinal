@@ -1,0 +1,23 @@
+@use 'variables' as var;
+@use 'mixins' as mix;
+
+header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    margin-right: 20px;
+    color: var.$white-color;
+    text-decoration: none;
+    @include mix.font(null, 18px);
+    padding: 10px 20px;
+    background-color: var.$button-bg;
+    @include mix.border-radius(5px);
+    @include mix.transition(background-color, 0.3s);
+
+    &:hover {
+      background-color: var.$button-bg;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use 'mixins' as mix;
+
+.crear-cuenta {
+    text-align: center;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    @include mix.border-radius(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-contacto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .titulo, .crear-cuenta {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formulario-crear-cuenta {
+    margin-top: 20px;
+  }
+  

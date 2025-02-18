@@ -1,0 +1,15 @@
+@mixin transition($property, $duration, $timing-function: ease) {
+    transition: $property $duration $timing-function;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin font($family, $size, $weight: normal, $color: inherit) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
