@@ -103,7 +103,7 @@ header .nav-links a:hover {
   font-size: 40px;
   text-transform: lowercase;
   color: #faf4d3;
-  text-shadow: black;
+  text-shadow: 1px 1px 1px black !important;
 }
 
 .crear_cuenta {
