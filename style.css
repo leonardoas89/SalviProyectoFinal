@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -280,14 +281,15 @@ footer .footer-links a:hover {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Mobile (max-width: 480px) */
+/* Media query para pantallas medianas (tabletas y pequeñas laptops) */
 @media (max-width: 480px) {
-  header {
+  .header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
   .nav-links {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -304,7 +306,7 @@ footer .footer-links a:hover {
   }
   #main-video-fondo {
     height: auto;
-    width: 100%;
+    width: auto;
   }
   .articles-section {
     padding: 5px;
@@ -321,21 +323,18 @@ footer .footer-links a:hover {
     font-size: 14px;
   }
 }
-/* Tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
+/* Media query para dispositivos móviles (pantallas más pequeñas) */
+@media (min-width: 481) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
   }
   .nav-links {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .nav-links a {
-    margin: 10px 10px;
-    padding: 5px 15px;
-    font-size: 16px;
+    margin: 10px 0;
   }
   .titulo {
     font-size: 50px;
@@ -345,61 +344,30 @@ footer .footer-links a:hover {
   }
   #main-video-fondo {
     height: auto;
-    width: 100%;
+    width: auto;
   }
   .articles-section {
     padding: 10px;
   }
   article {
     margin: 10px 0;
-    padding: 15px;
+    padding: 10px;
   }
   footer {
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
-  }
-  .footer-links a {
-    font-size: 14px;
   }
 }
 /* Desktop (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  .nav-links {
-    flex-direction: row;
-    align-items: center;
-  }
-  .nav-links a {
-    margin: 10px 15px;
-    padding: 5px 20px;
-    font-size: 18px;
-  }
   .titulo {
     font-size: 75px;
   }
   .subtitulo {
     font-size: 30px;
   }
-  #main-video-fondo {
-    height: auto;
-    width: 100%;
-  }
-  .articles-section {
-    padding: 15px;
-  }
-  article {
-    margin: 15px 0;
-    padding: 20px;
-  }
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+  .nav-links a {
+    font-size: 16px;
   }
   .footer-links a {
     font-size: 16px;
