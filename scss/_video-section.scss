@@ -1,11 +1,12 @@
 @use 'variables' as var;
 
 .video-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
+  box-shadow: 0 0 10px #000;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
   
   #main-video-fondo {
     position: absolute;
