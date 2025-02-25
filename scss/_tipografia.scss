@@ -50,6 +50,9 @@
 }
 
 .mapa {
+  width: 80%;
+  height: 400px;
+  max-width: 100%;
   display: block;
   margin-bottom: 20px;
 }
@@ -64,6 +67,10 @@
 }
 
 .texto-mision,
-.texto-vision {
+.texto-vision,
+.descripcion-tienda {
   @include mix.font(var.$font-family-times, 20px);
+  text-align: justify;
+  color: black;
+  text-decoration: double;
 }
