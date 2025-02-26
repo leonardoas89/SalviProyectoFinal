@@ -1,0 +1,26 @@
+.what {
+    width: 70px; /* Aumentado para permitir el padding */
+    height: 70px;
+    color: rgba(84, 103, 42, 0.401);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: last baseline; /* Centra verticalmente */
+    background-color: springgreen;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 8px white;
+}
+
+.what:hover{
+    background-color: #218838; 
+    transform: translateY(-3px);
+}
+
+.what .fa-whatsapp{
+    color: white;
+}
