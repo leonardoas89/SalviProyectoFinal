@@ -1,26 +1,30 @@
 .what {
-    width: 70px; /* Aumentado para permitir el padding */
+    width: 70px;
     height: 70px;
     color: rgba(84, 103, 42, 0.401);
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: last baseline; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     background-color: springgreen;
     text-shadow: 0 0 5px #000;
     position: fixed;
     bottom: 40px;
-    right: 40px;
-    font-size: 50px;
+    right: 60px;
+    font-size: 45px;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 4px 8px white;
+    z-index: 9999;
+    opacity: 0.9;
 }
 
 .what:hover{
     background-color: #218838; 
     transform: translateY(-3px);
+    opacity: 1;
 }
 
 .what .fa-whatsapp{
     color: white;
+    line-height: 70px;
 }

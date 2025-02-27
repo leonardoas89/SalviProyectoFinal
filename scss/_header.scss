@@ -1,6 +1,11 @@
 @use 'variables' as var;
 @use 'mixins' as mix;
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 .marquee {
   display: inline-block;
   white-space: nowrap;

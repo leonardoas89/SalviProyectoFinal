@@ -9,10 +9,15 @@ body {
   background-color: rgba(132, 85, 61, 0.662745098) !important;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 .marquee {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 20s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 .marquee span {
@@ -347,49 +352,6 @@ footer .footer-links a:hover {
   flex-grow: 1;
 }
 
-/* Estilos del Modal */
-.modal {
-  display: none; /* Oculto por defecto */
-  position: fixed;
-  z-index: 1; /* Asegura que esté encima de otros elementos */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* Permite scroll si el contenido es más grande que la pantalla */
-  background-color: rgb(0, 0, 0); /* Color de fondo semi-transparente */
-  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo semi-transparente */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% desde la parte superior y centrado horizontalmente */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Ancho del contenido del modal */
-  max-height: 80%; /* Altura máxima del contenido del modal */
-  overflow: hidden;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.pdf-iframe {
-  width: 100%;
-  height: 500px; /* Altura del iframe del PDF */
-}
-
 .cart-container {
   position: fixed;
   top: 100px;
@@ -431,30 +393,34 @@ footer .footer-links a:hover {
 }
 
 .what {
-  width: 70px; /* Aumentado para permitir el padding */
+  width: 70px;
   height: 70px;
   color: rgba(84, 103, 42, 0.401);
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: last baseline; /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
   background-color: springgreen;
   text-shadow: 0 0 5px #000;
   position: fixed;
   bottom: 40px;
-  right: 40px;
-  font-size: 50px;
+  right: 60px;
+  font-size: 45px;
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 0 4px 8px white;
+  z-index: 9999;
+  opacity: 0.9;
 }
 
 .what:hover {
   background-color: #218838;
   transform: translateY(-3px);
+  opacity: 1;
 }
 
 .what .fa-whatsapp {
   color: white;
+  line-height: 70px;
 }
 
 /* Media query para pantallas medianas (tabletas y pequeñas laptops) */
@@ -501,6 +467,10 @@ footer .footer-links a:hover {
 }
 /* Media query para dispositivos móviles (pantallas más pequeñas) */
 @media (min-width: 481) and (max-width: 768px) {
+  .marquee span {
+    padding-left: 50%;
+    font-size: 16px;
+  }
   .header {
     flex-direction: column;
   }
@@ -522,12 +492,24 @@ footer .footer-links a:hover {
     height: auto;
     width: auto;
   }
+  .card {
+    max-width: 90%;
+  }
   .articles-section {
     padding: 10px;
   }
   article {
     margin: 10px 0;
     padding: 10px;
+  }
+  .expanded-article {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.7);
   }
   footer {
     flex-direction: column;
