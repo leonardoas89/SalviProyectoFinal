@@ -352,6 +352,52 @@ footer .footer-links a:hover {
   flex-grow: 1;
 }
 
+.catalogo-btn, .search-btn {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  color: inherit;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px brown;
+  background-color: rgba(234, 204, 184, 0.7411764706);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.catalogo-btn:hover, .search-btn:hover {
+  background-color: brown;
+}
+
+.search-bar {
+  margin: 4px 2px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 69%;
+}
+
+.col-md-4.producto {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.col-md-4.producto > img {
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  aspect-ratio: 1/1.5;
+}
+.col-md-4.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
 .cart-container {
   position: fixed;
   top: 100px;

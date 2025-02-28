@@ -1,3 +1,5 @@
+/*Script para card en index*/
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const overlay = document.getElementById('overlay');
     const expandedArticle = document.getElementById('expanded-article');
@@ -42,3 +44,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     overlay.addEventListener('click', closeArticle);
 });
+
+/*Script para boton catalogo en la tienda*/
+
+function abrirCatalogo() {
+    window.open('../multimedia/catalogovinos.pdf', '_blank');
+}
+
+function realizarBusqueda() {
+    const query = document.querySelector('.search-bar').value;
+    alert('Realizando búsqueda para: ' + query);
+}

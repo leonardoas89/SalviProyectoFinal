@@ -1,45 +1,93 @@
-@use 'mixins' as mix;
+@use 'mixins'as mix;
+@use 'variables'as var;
+
+.catalogo-btn, .search-btn {
+  margin-right: 10px;
+  color: var.$white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include mix.font(null, 16px);
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px var.$shadow-color;
+  background-color: var.$button-bg;
+  @include mix.border-radius(5px);
+  @include mix.transition(background-color, 0.3s);
+
+  &:hover {
+  background-color: var.$shadow-color;
+      
+  }
+}
+
+.search-bar {
+  margin: 4px 2px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 69%;
+}
+
+.col-md-4.producto {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  margin-bottom: 20px;
+  
+& > img {
+  max-width: 100%;
+  height: 300px;
+  display: block; 
+  aspect-ratio: 1/1.5; 
+}
+
+  &:hover {
+    transform: translateY(-5px); // Lift slightly on hover
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); // More prominent shadow on hover
+    border-color: #007bff; //Change border color on hover (Example: blue)
+  }
+}
 
 .cart-container {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    background-color: #f8f9fa;
-    padding: 10px;
-    @include mix.border-radius(5px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    @include mix.transition(opacity, 0.5s);
-    opacity: 0.2;
-  
-    &:hover {
-      opacity: 1;
-    }
-  
-    .list-group {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      height: 100%;
-    }
-  
-    h4 {
-      margin-bottom: 10px;
-    }
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  @include mix.border-radius(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  @include mix.transition(opacity, 0.5s);
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
   }
-  
-  .nombre-producto {
-    font-size: 25px;
-    font-weight: bolder;
+
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
   }
-  
-  .precio-producto {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+
+  h4 {
+    margin-bottom: 10px;
   }
-  
-  .detalle-producto {
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
+}
+
+.nombre-producto {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.precio-producto {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.detalle-producto {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
